@@ -1,0 +1,9 @@
+#compdef cdk
+
+_cdk() {
+	local commands
+	commands=("init" "synth" "deploy" "destroy" "list" "bootstrap" "diff" "watch" "metadata")
+	_describe 'CDK commands' commands
+}
+
+compdef _cdk cdk
